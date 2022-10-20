@@ -1,0 +1,8 @@
+button,
+input[type="button"] {
+  cursor: pointer;
+  &:disabled {
+    background-color: #5ece7c68;
+    cursor: not-allowed;
+  }
+}

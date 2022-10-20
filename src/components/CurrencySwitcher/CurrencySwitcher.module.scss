@@ -1,0 +1,13 @@
+@import "../../styles/abstract/_variables.scss";
+
+.Dropdown {
+  outline: none;
+  border: none;
+  font-family: $mainFont;
+  font-weight: 500;
+  font-size: 18px;
+  color: $blackColor;
+  margin-right: 28px;
+  &__Item {
+  }
+}

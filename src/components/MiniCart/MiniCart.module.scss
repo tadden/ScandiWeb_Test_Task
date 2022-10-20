@@ -1,0 +1,74 @@
+@import "../../styles/abstract/variables.scss";
+
+.Overlay {
+  position: fixed;
+  overflow: hidden;
+  top: 80px;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  overflow-y: scroll;
+  //   pointer-events: none;
+  //   display: flex;
+  //   justify-content: center;
+  //   align-items: center;
+  background: rgba(7, 55, 72, 0.22);
+  z-index: 1200;
+}
+.MiniCart {
+  background-color: white;
+  margin-left: 70%;
+  max-width: 365px;
+  height: auto;
+  padding: 8px 16px 20px;
+  &__Title {
+    font-family: $mainFont;
+    font-weight: 700;
+    font-size: 16px;
+    color: $blackColor;
+    margin-bottom: 23px;
+    &__Value {
+      font-weight: 500;
+    }
+  }
+  &__TotalPrice {
+    &__Wrapper {
+      display: flex;
+      justify-content: space-between;
+    }
+    &__Value {
+      font-family: $mainFont;
+      font-weight: 700;
+      font-size: 16px;
+      color: $blackColor;
+    }
+  }
+  &__Link {
+    text-decoration: none;
+    border: 1px solid $blackColor;
+    padding: 13px 36px;
+
+    font-family: "Raleway";
+    font-weight: 600;
+    font-size: 14px;
+    text-align: center;
+    text-transform: uppercase;
+    color: $blackColor;
+
+    &:not(:last-child) {
+      margin-right: 12px;
+    }
+
+    &__Wrapper {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-top: 35px;
+    }
+  }
+  &__Link:hover,
+  &__Link:focus {
+    background: $accentColor;
+    color: #ffffff;
+  }
+}

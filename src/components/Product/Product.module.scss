@@ -1,0 +1,140 @@
+@import "../../styles/abstract/_variables.scss";
+
+.Product {
+  &__Wrapper {
+    display: flex;
+  }
+  &__Img {
+    width: 80px;
+    cursor: pointer;
+
+    &__Wrapper {
+      display: flex;
+      flex-direction: column;
+    }
+
+    &:not(:last-child) {
+      margin-bottom: 40px;
+    }
+  }
+
+  &__SelectedImg {
+    max-width: 600px;
+    max-height: 500px;
+    &__Wrapper {
+      margin-left: 40px;
+      min-width: 600px;
+      max-height: 500px;
+    }
+  }
+
+  &__Detail__Wrapper {
+    margin-left: 100px;
+  }
+  &__Name {
+    font-family: $mainFont;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 30px;
+    line-height: 27px;
+    color: $blackColor;
+  }
+  &__Brand {
+    font-family: $mainFont;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 27px;
+    color: $blackColor;
+
+    margin-top: 16px;
+  }
+  &__Btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: $mainFont;
+    font-weight: 600;
+    font-size: 16px;
+    text-transform: uppercase;
+    color: #ffffff;
+    min-width: 200px;
+    min-height: 50px;
+    background: $accentColor;
+    border: transparent;
+    cursor: pointer;
+    margin-top: 20px;
+    width: 292px;
+  }
+  &__Btn:hover,
+  &__Btn:focus {
+    transform: scale(1.03);
+  }
+
+  &__Description {
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 159.96%;
+    color: $blackColor;
+    max-width: 292px;
+    margin-top: 40px;
+  }
+  &__Price {
+    margin-top: 10px;
+    font-family: $mainFont;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    color: $blackColor;
+  }
+  &__Attributes {
+    &__Wrapper {
+      margin-top: 43px;
+    }
+
+    &__Name {
+      font-family: "Roboto Condensed";
+      font-style: normal;
+      font-weight: 700;
+      font-size: 18px;
+      line-height: 18px;
+      text-transform: uppercase;
+      color: $blackColor;
+    }
+    &__Value {
+      &__Wrapper {
+        display: flex;
+        margin-bottom: 40px;
+        margin-top: 8px;
+      }
+      &__Box {
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border: 1px solid $blackColor;
+        width: 63px;
+        height: 45px;
+
+        &_selected {
+          border-width: 3px;
+          background-color: $blackColor;
+          color: white;
+        }
+
+        &:not(:last-child) {
+          margin-right: 12px;
+        }
+      }
+      &__Value {
+        font-family: "Source Sans Pro";
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 18px;
+      }
+    }
+  }
+}

@@ -1,0 +1,20 @@
+@import "../../styles/abstract/variables.scss";
+
+.CartPage {
+  &__Title {
+    font-family: $mainFont;
+    font-weight: 700;
+    font-size: 32px;
+    text-transform: uppercase;
+    color: $blackColor;
+    margin-bottom: 59px;
+  }
+  &__EmptyTitle {
+    font-family: $mainFont;
+    font-weight: 700;
+    font-size: 32px;
+    text-transform: uppercase;
+    color: $blackColor;
+    text-align: center;
+  }
+}

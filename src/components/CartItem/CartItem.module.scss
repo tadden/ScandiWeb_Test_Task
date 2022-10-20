@@ -1,0 +1,110 @@
+@import "../../styles/abstract/variables.scss";
+
+.Item {
+  &__Wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-top: 1px solid #e5e5e5;
+    padding-top: 20px;
+    margin-bottom: 19px;
+
+    &_isMiniCart {
+      margin-bottom: 42px;
+      border: none;
+      padding-top: 0;
+    }
+  }
+  &__Name {
+    font-family: $mainFont;
+    font-weight: 600;
+    font-size: 30px;
+    color: $blackColor;
+    margin-bottom: 16px;
+
+    &_isMiniCart {
+      font-weight: 300;
+      font-size: 16px;
+    }
+  }
+  &__Brand {
+    font-family: $mainFont;
+    font-size: 30px;
+    color: $blackColor;
+    margin-bottom: 12px;
+
+    &_isMiniCart {
+      font-weight: 300;
+      font-size: 16px;
+    }
+  }
+  &__Price {
+    font-family: $mainFont;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    color: $blackColor;
+    margin-bottom: 12px;
+
+    &_isMiniCart {
+      margin-top: 5px;
+      font-weight: 500;
+      font-size: 16px;
+    }
+  }
+  &__Attributes {
+    &__Value {
+      &__Wrapper {
+        display: flex;
+        margin-bottom: 12px;
+
+        &_isMiniCart {
+          margin-bottom: 5px;
+        }
+      }
+      &__Box {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border: 1px solid #a6a6a6;
+        color: #a6a6a6;
+        background-color: rgba(166, 166, 166, 0.2);
+        width: 63px;
+        height: 45px;
+
+        &_selected {
+          border: 1px solid black;
+          background-color: $blackColor;
+          color: white;
+        }
+
+        &:not(:last-child) {
+          margin-right: 12px;
+        }
+        &_isMiniCart {
+          font-size: 11px;
+          // padding: 5px;
+          width: 24px;
+          height: 24px;
+
+          &:not(:last-child) {
+            margin-right: 8px;
+          }
+        }
+      }
+    }
+  }
+  &__Count {
+    &__Wrapper {
+      display: flex;
+    }
+  }
+  &__Img {
+    width: 185px;
+    height: fit-content;
+
+    &_isMiniCart {
+      width: 105px;
+    }
+  }
+}

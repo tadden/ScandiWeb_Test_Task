@@ -1,0 +1,55 @@
+@import "../../styles/abstract/variables.scss";
+
+.ProductCard {
+  &__Item {
+    padding: 16px;
+    text-align: center;
+    height: 444px;
+
+    &:hover,
+    &:focus {
+      box-shadow: 0px 4px 35px rgba(168, 172, 176, 0.19);
+    }
+
+    &__Img {
+      height: 350px;
+    }
+
+    &__Link {
+      text-decoration: none;
+    }
+
+    &__Title {
+      font-family: $mainFont;
+      font-weight: 300;
+      font-size: 18px;
+      line-height: 160%;
+      color: $blackColor;
+      text-align: left;
+      margin-top: 24px;
+    }
+
+    &__Price {
+      font-family: $mainFont;
+      font-weight: 500;
+      font-size: 18px;
+      line-height: 160%;
+      color: $blackColor;
+      text-align: left;
+    }
+  }
+
+  // &__btn{
+  //     position: absolute;
+  //     top: 70%;
+  //     left: 70%;
+  //     width: 52px;
+  //     height: 52px;
+  //     border: none;
+  //     border-radius: 50%;
+  //     background-color: $accentColor;
+  //     background-image: url('../../images/Empty\ Cart.svg');
+  //     background-repeat: no-repeat;
+  //     background-size:cover
+  // }
+}
